@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- HERO SECTION -->
+     <section class="hero bg-primary-100" style="background-image: url(./assets/factory1.png); width: 100%;">
+        <div>
+            <!-- banner -->
+           <div id="banner" class="md:fixed w-full top-0 start-0 flex justify-center gap-10 bg-secondary-500 text-white px-1 py-3">
+           <a class="px-5 text-md" href="mailto:info@svnl.com">
+             <span>
+                <ion-icon name="location"></ion-icon>
+             </span>
+             <span>
+                info@svnl.com
+             </span>
+           </a>
+           
+           <a class="px-5 text-md flex space-x-2" href="+234...">
+             <span >
+                <ion-icon name="call"></ion-icon>
+             </span>
+             <span>
+                +23480XXXXXXXX
+             </span>
+            </a>
+           </div>
+
+
+            <!-- navbar -->
+            <!-- <nav class="navlinks bg-primary-300 md:static absolute md:min-h-fit min-h-[60vw] left-0 top-[-100%] md:w-auto w-full flex items-center px-1 py-1">
+                <div>
+                    <a href="index.html" class="w-16 md:w-32">
+                       <img class="w-35" src="../assets/1-COPYyy.png" alt="logo">
+                    </a> 
+                </div>
+                <div>
+                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12 px-4 md:px-0">
+                  <li>
+                       <a class="hover:text-secondary-500 text-white" href="/index.html">HOME</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-secondary-500 text-white" href="./src/about.html">ABOUT US</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-secondary-500 text-white" href="./src/services.html">OUR SERVICES</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-secondary-500 text-white" href="./src/newsblog.html">NEWS</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-secondary-500 text-white" href="./src/contact.html">CONTACT US</a>
+                  </li>
+                 </ul>
+                </div>
+
+                <div class="md:hidden">
+                    <ion-icon onclick="ontogglemenu(this)" name="menu-outline" class="text-3xl text-white cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>   -->
+
+            <nav id="navbar" class="flex justify-between rounded-full items-center md:mt-12 p-4 bg-white/70 transition-all duration-300 z-50 mx-auto w-7/8">
+            <div>
+              <a href="../index.html" class="w-16 md:w-32">
+               <img class="w-35" src="./assets/Untitled design 2.png" alt="logo">
+              </a> 
+            </div>
+
+        
+  
+            <div class="nav-links bg-white md:bg-white/0  md:static absolute md:min-h-fit min-h-[60vw] left-0 top-[-100%] md:w-auto w-full flex items-center px-1 py-1">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12 px-4 md:px-0">
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="/index.html">HOME</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/about.html">ABOUT US</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/services.html">PRODUCTS</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/newsblog.html">MEDIA</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/newsblog.html">RESPONSIBILITIES</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-primary-900 text-primary-500" href="./src/contact.html">CONTACT US</a>
+                  </li>
+               </ul>
+            </div>
+            
+ 
+            <div class="md:hidden">
+            <ion-icon onclick="ontogglemenu(this)" name="menu-outline" class="text-3xl text-primary-500 cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+
+        </div>
+         
+        <!-- hero tab -->
+        <div class="h-[36rem] md:h-[32rem] flex flex-wrap justify-start bg-no-repeat w-100 bg-cover" style=" width: 100%;">
+        <div class="md:  p-12 justify-between md:w-3/4">
+            <div class="text-2xl md:text-4xl text-white font-bold py-6">
+               Better health starts with real solutions.
+            </div>
+            <div class="text-xl md:text-2xl text-white font-semibold pb-6">
+                We create treatments for the needs that matter most.
+            </div>
+           
+            <div class="flex flex-col md:flex-row gap-4 md:gap-10 py-4 w-3/4">
+                
+               <button class="bg-primary-500  hover:bg-primary-700 px-2 md:px-8 py-4">
+                  <a class="text-white text-lg" href="./src/contact.html">Learn Our Story</a>
+               </button>
+               <button class="bg-primary-500  hover:bg-primary-700 px-2 md:px-8 py-4">
+                  <a class="text-white text-lg" href="./src/about.html">Our therapeutic areas</a>
+               </button>
+    
+            </div> 
+        </div>
+     </section>
+
+     <!-- About tab -->
+     <section class="md:grid md:grid-cols-2 md:gap-8 p-16">
+         <div class="md:p-6 pb-6">
+            <img src="./assets/Frame 7.png" alt="placeholder">
+         </div>
+
+         <div class="my-auto flex flex-col  md:gap-6 gap-4">
+            <p class="text-2xl text-primary-700">
+               Sagar Vitaceuticals 
+            </p>
+            <p>
+               We are a Lagos-based pharmaceutical company dedicated to manufacturing and distributing safe, high-grade therapeutic solutions. Operating under full NAFDAC and PCN compliance, our temperature-controlled distribution network supports hospitals, clinics, and pharmacies across all 36 states.
+            </p>
+         </div>
+     </section>
+
+    <section class="">
+        <!-- Features Tab -->
+         <div class="md:grid md:grid-cols-4 md:gap-8 gap-6 px-16">
+            <!--cards  -->
+           <div class="flex gap-4 py-4 px-2 shadow-md shadow-primary-200 justify-center rounded-md">  
+              <div class="text-primary-500 text-4xl my-auto">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+              <div>
+                <p>
+                   25 years
+                </p>
+                <p>
+                   of healthcare excellence
+                </p>
+              </div>
+           </div>
+
+            <div class="flex gap-4 py-4 px-2 shadow-md shadow-primary-200 justify-center rounded-md">  
+              <div class="text-primary-500 text-4xl my-auto">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <div>
+                <p>
+                   XXX
+                </p>
+                <p>
+                   highly trained employees
+                </p>
+              </div>
+           </div>
+
+            <div class="flex gap-4 px-2 py-4 shadow-md shadow-primary-200 justify-center rounded-md">  
+              <div class="text-primary-500 text-4xl my-auto">
+                <ion-icon name="navigate-outline"></ion-icon>
+              </div>
+              <div>
+                <p>
+                   36 states
+                </p>
+                <p class="text-sm">
+                   Nationwide distribution coverage
+                </p>
+              </div>
+           </div>
+
+            <div class="flex gap-4 py-4 px-2 shadow-md shadow-primary-200 justify-center rounded-md">  
+              <div class="text-primary-500 text-4xl my-auto">
+                <ion-icon name="folder-outline"></ion-icon>
+              </div>
+              <div>
+                <p>
+                   XXX
+                </p>
+                <p class="text-sm">
+                   products in our diverse portfolio
+                </p>
+              </div>
+           </div>
+         </div>
+
+        <!-- Products Tab -->
+         <div class="p-16">
+               <div class="text-primary-500 text-3xl font-bold pb-4 text-center">
+                OUR PRODUCTS
+               </div>
+               <!-- Product Cards -->
+            <div class="md:grid md:grid-cols-4 md:gap-8 gap-6">
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+
+                <div class="border-2 border-secondary-100 p-4 rounded-lg">
+                    <img src="./assets/products placeholder.png" class="w-full" alt="">
+                    <p class="text-center">
+                      Antibiotics
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-4">
+                  <button class="bg-primary-500 hover:bg-primary-700 text-white px-4 py-2 border-2 border-primary-200 hover:border-primary-700">
+                    More Categories
+                    <span class="text-white text-lg">
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+         </div>
+
+         <!-- MEDIA Tab -->
+         <div class="px-16 bg-primary-500 py-4">
+            <div class="text-white text-3xl font-bold pb-4 text-center">
+               MEDIA
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-4 gap-4 justify-center">
+               <div> 
+                  <img src="./assets/media placeholder.png" class="" alt="placeholder">
+               </div>
+               <div class="my-auto">
+                  <p class="text-white text-xl font-bold">
+                     Very Attractive Update
+                  </p>
+                  <p class="text-white text-sm py-4">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+
+                  </p>
+                  <div>
+                     <button class="bg-primary-500  hover:bg-primary-700 px-2 md:px-8 py-4 border-2 border-white">
+                      <a class="text-white text-lg" href="./src/contact.html">Learn Our Story</a>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+    const navLinks = document.querySelector('.nav-links');
+
+    function ontogglemenu(e) {
+      // Toggle icon
+      e.name = e.name === 'menu-outline' ? 'close' : 'menu-outline';
+
+      // Toggle menu visibility
+       navLinks.classList.toggle('top-14');       // shows the menu
+       navLinks.classList.toggle('top-[-100%]');  // hides the menu 
+       
+    }
+ </script>
+</body>
+</html>
