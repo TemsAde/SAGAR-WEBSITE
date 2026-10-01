@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-primary-200">
+     <div>
+            <!-- banner -->
+           <div id="banner" class="md:fixed w-full top-0 start-0 flex justify-center gap-10 bg-secondary-500 text-white px-1 py-3">
+           <a class="px-5 text-md" href="mailto:info@svnl.com">
+             <span>
+                <ion-icon name="location"></ion-icon>
+             </span>
+             <span>
+                info@svnl.com
+             </span>
+           </a>
+           
+           <a class="px-5 text-md flex space-x-2" href="+234...">
+             <span >
+                <ion-icon name="call"></ion-icon>
+             </span>
+             <span>
+                +23480XXXXXXXX
+             </span>
+            </a>
+           </div>
+
+            <!-- NAVBAR -->
+            <nav id="navbar" class="flex justify-between rounded-full items-center md:mt-12 p-4 bg-white/70 transition-all duration-300 z-50 mx-auto w-7/8">
+            <div>
+              <a href="../index.html" class="w-16 md:w-32">
+               <img class="w-35" src="../assets/Untitled design 2.png" alt="logo">
+              </a> 
+            </div>
+
+        
+  
+            <div class="nav-links bg-white md:bg-white/0  md:static absolute md:min-h-fit min-h-[60vw] left-0 top-[-100%] md:w-auto w-full flex items-center px-1 py-1">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12 px-4 md:px-0">
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="/index.html">HOME</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/about.html">ABOUT US</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/services.html">PRODUCTS</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/newsblog.html">MEDIA</a>
+                  </li>
+                  <li>
+                       <a class="hover:text-primary-900 text-primary-500" href="./src/newsblog.html">RESPONSIBILITIES</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-primary-900 text-primary-500" href="./src/contact.html">CONTACT US</a>
+                  </li>
+               </ul>
+            </div>
+            
+ 
+            <div class="md:hidden">
+            <ion-icon onclick="ontogglemenu(this)" name="menu-outline" class="text-3xl text-primary-500 cursor-pointer md:hidden"></ion-icon>
+            </div>
+            </nav>
+
+            <p class="text-3xl md:text-3xl text-center font-bold text-primary-900 p-4">
+                The Sagar Story
+            </p>
+
+        </div>
+    </header>
+ 
+    <!-- Story Section -->
+    <section class="mt-8 px-8 md:px-16">
+        <!-- Story Section -->
+         <div class="text-xl text-primary-700 font-medium text-center mb-4">
+            Over 25 Years of Trusted Pharmaceutical Excellence
+         </div>
+         <div class="md:grid md:grid-cols-2 pb-4 items-center">
+            <div class="justify-center">
+               <img src="../assets/products placeholder.png" class="rounded-xl md:rounded-none md:rounded-tl-4xl mb-4 flex" alt="">
+            </div>
+
+            <div> 
+               <p class="md:pr-8 flex ">
+                Sagar Vitaceuticals Nigeria Limited (formerly Strides Vital Nigeria Limited) is a leading name in high-quality pharmaceuticals. Building on a strong foundation that began as a strategic partnership with India’s NSE-listed Strides Arcolabs Ltd, the company transitioned to 100% management ownership in 2017.
+                For over 25 years, our trusted household brands—including Vitaclox, Vitacillin, Vitamox, Tropitone, Inbu, and Ytacan—have provided reliable healthcare solutions across Nigeria.
+               </p>
+            </div>
+
+         </div>
+
+         <div class="md:grid md:grid-cols-2 pb-4 items-center">
+            
+            <div> 
+               <p class="md:pr-8 flex ">
+                 To meet growing regional demand, we expanded from our initial Ikeja facility to a newly commissioned, state-of-the-art manufacturing plant in Ogun State in August 2023. This modern facility powers our enhanced production capacity across:
+                 <ul class="list-disc pl-4">
+                    <li>Tablets & Capsules</li>
+                    <li>Liquids & Ointments</li>
+                    <li>Dry Powder Sachets</li>
+                 </ul>
+               </p>
+            </div>
+
+            <div class="md:justify-self-end mt-4">
+               <img src="../assets/products placeholder.png" class="rounded-xl md:rounded-none md:rounded-br-4xl" alt="">
+            </div>
+
+         </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mt-8 px-8 md:px-16">
+        <div class="text-xl text-primary-700 font-medium text-center mb-4">
+           Driven by quality, Focused on Impact
+        </div>
+        <div class="my-6">
+            <p class="text-lg font-semibold">
+                Our Mission
+            </p>
+            <p>
+                To improve lives by identifying, developing, and commercializing meaningful products that address unmet medical needs. We aim to be the preferred supply partner to all our customers while achieving sustained growth through consistent, customer-centric, and world-class quality products.
+            </p>
+        </div>
+        <div>
+            <p class="text-lg font-semibold mb-2"> 
+                Every operational decision at Sagar Vitaceuticals is anchored in three core commitments:
+            </p>
+            <ul class="">
+                <li class="flex flex-row max-w-fit items-center gap-4 p-2 mb-4 border-l-2 border-primary-500 shadow-sm shadow-primary-500 rounded-r-full">
+                    <span>
+                        <ion-icon name="shield-checkmark-outline" class="text-primary-700 text-4xl"></ion-icon>
+                    </span>
+                    <span>Quality first- strict adherence to safety standards across every batch.</span>
+                </li>
+                <li class="flex flex-row max-w-fit items-center gap-4 p-2 mb-4 border-l-2 border-primary-500 shadow-sm shadow-primary-500 rounded-r-full">
+                    <span>
+                        <ion-icon name="cog-outline" class="text-primary-700 text-4xl"></ion-icon>
+                    </span>
+                    <span>Value-led operations</span>
+                </li>
+                <li class="flex flex-row max-w-fit items-center gap-4 p-2 mb-4 border-l-2 border-primary-500 shadow-sm shadow-primary-500 rounded-r-full">
+                    <span>
+                        <ion-icon name="people-outline" class="text-primary-700 text-4xl"></ion-icon>
+                    </span>
+                    <span>Empowering work environment for all employees.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="mt-8 p-8 md:py-8 bg-primary-500">
+       <div class="text-2xl text-white font-semibold text-center mb-4">
+         Our Leadership Team
+       </div>
+       <div class="flex flex-row flex-wrap gap-4 justify-center">
+           <!-- Exec cards -->
+          <div class="bg-white border-secondary-100 p-4 rounded-lg">
+                <img src="../assets/products placeholder.png" class="" alt="">
+                <p class="text-center">
+                  Akash Kothari
+                </p>
+                <p class="text-center italic">
+                  Managing Director
+                </p>
+          </div>
+          <div class="bg-white border-secondary-100 p-4 rounded-lg">
+                <img src="../assets/products placeholder.png" class="" alt="">
+                <p class="text-center">
+                  Akash Kothari
+                </p>
+                <p class="text-center italic">
+                  Managing Director
+                </p>
+          </div>
+          <div class="bg-white border-secondary-100 p-4 rounded-lg">
+                <img src="../assets/products placeholder.png" class="" alt="">
+                <p class="text-center">
+                  Akash Kothari
+                </p>
+                <p class="text-center italic">
+                  Managing Director
+                </p>
+          </div>
+          <div class="bg-white border-secondary-100 p-4 rounded-lg">
+                <img src="../assets/products placeholder.png" class="" alt="">
+                <p class="text-center">
+                  Akash Kothari
+                </p>
+                <p class="text-center italic">
+                  Managing Director
+                </p>
+          </div>
+          <div class="bg-white border-secondary-100 p-4 rounded-lg">
+                <img src="../assets/products placeholder.png" class="" alt="">
+                <p class="text-center">
+                  Akash Kothari
+                </p>
+                <p class="text-center italic">
+                  Managing Director
+                </p>
+          </div>
+       </div>
+    </section>
+
+            <!-- Contact tab -->
+         <div class="py-6 px-8 md:px-16 m-auto rounded-lg md:grid md:grid-cols-2 md:gap-8 gap-6">
+          <div class="">
+          <div class="text-2xl text-primary-600 font-medium pt-3">
+            Questions or Inquiries? Get in touch with us
+          </div>
+          <div class="text-green-950 pt-4">
+           <div class="font-semibold">
+             <span> <ion-icon name="call-outline" class="text-xl pr-2"></ion-icon> </span>
+             <span class="p-2">Speak to a rep:</span>
+             <span><a href="+234...">+23480XXXXXXX</a></span>
+           </div>
+
+           <div class="font-semibold">
+             <span> <ion-icon name="logo-whatsapp" class="text-xl pr-2"></ion-icon> </span>
+             <span class="p-2">Send a whatsapp message:</span>
+             <span><a href="+234...">+23480XXXXXXX</a></span>
+           </div>
+
+            <div class="font-semibold">
+             <span> <ion-icon name="mail-outline" class="text-xl pr-2"></ion-icon> </span>
+             <span class="p-2">Send an email:</span>
+             <span><a href="info@svnl.com">info@svnl.com</a></span>
+            </div>
+          </div> 
+          </div>
+
+             <!-- subscription box -->
+          <div class="mx-auto">
+            <div class=" items-center rounded-lg bg-primary-600 p-4 sm:p-8 lg:flex-row lg:justify-between">
+                <div class="mb-4 sm:mb-8 lg:mb-0">
+                    <h2 class="text-center text-xl font-bold text-white sm:text-2xl lg:text-left lg:text-3xl">Stay
+                        Updated</h2>
+                    <p class="text-center text-white lg:text-left">Subscribe to our newsletter</p>
+                </div>
+                <div class="flex flex-col items-center w-96 lg:items-end">
+                    <form class="flex w-full gap-2">
+                        <input placeholder="Enter your email address" class="bg-white w-full flex-1 rounded px-3 py-2 text-gray-txt placeholder-gray-dark focus:outline-none">
+                        <button class="inline-block rounded bg-white px-8 py-2 text-center text-sm font-semibold text-primary  md:text-base hover:text-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+         </div> 
+
+         <!-- Footer tab -->
+            
+         <footer class=" dark:bg-gray-900 px-8 md:px-16">
+         <hr class="my-2 mx-auto border-primary-200 sm:mx-auto dark:border-gray-700 lg:my-2" />   
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div class="mb-4 md:mb-4 max-w-md">
+                  <a href="#" class="flex items-center">
+                      <img src="../assets/Untitled design 2.png" class="me-3" alt="svnl" />
+                      <!-- <span class="self-center text-l font-semibold whitespace-nowrap text-white">SVNL</span> -->
+                  </a>
+                  <p class=" text-wrap py-4">
+                    <span> <ion-icon name="location"></ion-icon></span>
+                    <span> Office Address: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reiciendis excepturi dolore, ab ma</span>
+                  </p>
+                  <p class="py-4 ">
+                     <span> <ion-icon name="call"></ion-icon> </span>
+                     <span> +234 80XXXXXXx</span>
+                  </p>
+              </div>
+                 
+              <div class="mb-6">
+                <div class="mb-4 text-sm font-semibold text-white">Find us on social media:</div>
+                <div>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook text-xl p-4"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-xl p-4"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin text-xl p-4"></i></a>
+                    </span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-white">Quick Links</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-2">
+                              <a href="./src/about.html" class="hover:underline">About</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="./src/services.html" class="hover:underline">Products</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="./src/newsblog.html" class="hover:underline">Media</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-white">Contact & Inquiries</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-2">
+                              <a href="./src/faq.html" class="hover:underline ">FAQs</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="./src/contact.html" class="hover:underline">Contact Form</a>
+                          </li>
+                          <!-- <li class="mb-2">
+                              <a href="./src/contact.html" class="hover:underline">Book a Consultation</a>
+                          </li> -->
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2026 <a href="#" class="hover:underline">SVNL</a>. All Rights Reserved.</span>
+          </div>
+        </div>
+         </footer>
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    const navLinks = document.querySelector('.nav-links');
+
+    function ontogglemenu(e) {
+      // Toggle icon
+      e.name = e.name === 'menu-outline' ? 'close' : 'menu-outline';
+
+      // Toggle menu visibility
+       navLinks.classList.toggle('top-14');       // shows the menu
+       navLinks.classList.toggle('top-[-100%]');  // hides the menu 
+       
+    }
+    </script>
+</body>
+</html>
